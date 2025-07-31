@@ -63,7 +63,7 @@ export default function ChatMessage({
     }
 
     // Handle case where we have reasoningContent (content can be null or empty)
-    if (msg.reasoningContent.length > 0) {
+    if (msg.reasoningContent !== null) {
       return {
         content: msg.content || '',
         thought: msg.reasoningContent,
